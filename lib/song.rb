@@ -29,6 +29,6 @@ class Song
   end
 
   def self.find_by_name(song_name)
-    @@all.detect {|song| song == song_name}.object_id
+    @@all.detect {|song| song == song_name}.name
   end
 end
