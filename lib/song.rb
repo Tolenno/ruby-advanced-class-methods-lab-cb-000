@@ -51,6 +51,7 @@ class Song
   end
 end
 
+binding.pry
 song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
 song.name
 song.artist_name
