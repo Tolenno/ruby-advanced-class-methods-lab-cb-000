@@ -28,7 +28,7 @@ class Song
     self.new_by_name(song_name)
   end
 
-  def self.fing_by_name(song_name)
+  def self.find_by_name(song_name)
     @@all.detect {|song| song == song_name}.object_id
   end
 end
