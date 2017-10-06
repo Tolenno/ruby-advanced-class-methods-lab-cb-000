@@ -29,6 +29,6 @@ class Song
   end
 
   def self.fing_by_name(song_name)
-    @@all.
+    @@all.detect {|song| song == song_name}
   end
 end
