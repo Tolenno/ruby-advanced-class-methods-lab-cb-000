@@ -50,3 +50,7 @@ class Song
     @@all[-1].artist_name = names[1].chomp(".mp3")
   end
 end
+
+song = song.new_from_filename("Taylor Swift - Blank Space.mp3")
+song.name
+song.artist_name
