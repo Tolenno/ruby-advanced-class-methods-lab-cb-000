@@ -51,6 +51,3 @@ class Song
     song
   end
 end
-
-song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
-puts song.artist_name
