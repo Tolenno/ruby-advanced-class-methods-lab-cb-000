@@ -50,4 +50,11 @@ class Song
     @@all[-1].artist_name = names[0]
     song
   end
+
+  def self.create_from_filename(file_name)
+    names = file_name.split(" - ")
+    song = self.find_or_create_by_name(names[1].chomp(".mp3"))
+    @@all[-1].artist_name = names[0]
+    song
+  end
 end
