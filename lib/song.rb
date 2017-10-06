@@ -46,6 +46,7 @@ class Song
 
   def self.new_from_filename(file_name)
     names = file_name.split(" - ")
-    binding.pry
+    self.find_or_create_by_name(names[0])
+    @@all[-1].artist = names[1].chomp(".mp3")
   end
 end
