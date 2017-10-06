@@ -27,4 +27,8 @@ class Song
   def self.create_by_name(song_name)
     self.new_by_name(song_name)
   end
+
+  def self.fing_by_name(song_name)
+    @@all.
+  end
 end
