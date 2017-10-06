@@ -50,8 +50,3 @@ class Song
     #@@all[-1].artist_name = names[0]
   end
 end
-
-binding.pry
-song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
-song.name
-song.artist_name
